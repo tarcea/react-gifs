@@ -13,7 +13,6 @@ class Main extends Component {
       gifs: [],
       selectedGifId: 'xUA7bjRvY2Y4LCMqn6'
     };
-
   }
 
   search = (query) => {
