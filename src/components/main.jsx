@@ -28,6 +28,12 @@ class Main extends Component {
     });
   }
 
+  selectGif = (id) => {
+    this.setState({
+      selectedGifId: id
+    });
+  }
+
   render() {
     return (
       <div>
@@ -38,7 +44,7 @@ class Main extends Component {
           </div>
         </div>
         <div className="right-part">
-          <GifList gifs={this.state.gifs} />
+          <GifList gifs={this.state.gifs} selectGif={this.selectGif} />
         </div>
       </div>
     );
